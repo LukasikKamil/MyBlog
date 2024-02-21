@@ -1,0 +1,18 @@
+﻿@inherits TestContext
+
+@code {
+    [Fact(DisplayName ="Checks that the Index component show 10 posts")]
+    public void Show10Blogposts()
+    {
+        // Act
+        var cut = Render(@<Index />);
+
+        // Assert that the content has 10 article tags (each reprersenting a blogpost)
+        Assert.Equal(10, cut.FindAll("article").Count());
+    }
+
+    public IndexTest()
+    {
+        Services.AddScoped<IBlogApi, BlogApiMock>();
+    }
+}

@@ -1,0 +1,33 @@
+﻿@page "/alerttest"
+@using Components.RazorComponents
+
+<h3>Alert Test</h3>
+<Alert Style="Alert.AlertStyle.Danger">
+    This is alert test danger
+</Alert>
+<Alert Style="Alert.AlertStyle.Success">
+    <ChildContent>
+        This is another test
+    </ChildContent>
+</Alert>
+<Alert Style="Alert.AlertStyle.Success" />
+<Alert Style="Alert.AlertStyle.Info">
+    This is alert test info
+</Alert>
+<Alert Style="Alert.AlertStyle.Secondary">
+    <ChildContent>
+        This is another test - secondary
+    </ChildContent>
+</Alert>
+<Alert Style="Alert.AlertStyle.Warning">
+    This is alert test warning
+</Alert>
+<Alert Style="Alert.AlertStyle.Dark">
+    This is alert test dark
+</Alert>
+<Alert Style="Alert.AlertStyle.Light">
+    This is alert test light
+</Alert>
+@code {
+
+}
